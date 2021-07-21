@@ -46,4 +46,14 @@ body {
   transform-origin: right;
 }
 
+.hand.second-hand {
+  background: #822;
+  height: 3px;
+}
+
+.hand.hour-hand {
+  width: 40%;
+  margin-left: 10%;
+}
+
 .
