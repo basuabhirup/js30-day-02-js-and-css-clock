@@ -1,7 +1,7 @@
 html {
-  background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background: #018DED url(https://images.unsplash.com/photo-1490237251747-4557595144b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80);
   background-size: cover;
-  font-family: 'helvetica neue';
+  font-family: 'Major Mono Display', monospace;
   text-align: center;
   font-size: 10px;
 }
@@ -11,6 +11,7 @@ body {
   font-size: 2rem;
   display: flex;
   flex: 1;
+  flex-direction: column;
   min-height: 100vh;
   align-items: center;
 }
@@ -18,15 +19,15 @@ body {
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 20px solid white;
+  border: 10px solid #aaa;
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 10rem auto 4rem;
   position: relative;
   padding: 2rem;
   box-shadow:
     0 0 0 4px rgba(0,0,0,0.1),
-    inset 0 0 0 3px #EFEFEF,
-    inset 0 0 10px black,
+    inset 0 0 0 3px black,
+    inset 0 0 10px white,
     0 0 10px rgba(0,0,0,0.2);
 }
 
@@ -40,15 +41,20 @@ body {
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: white;
   position: absolute;
   top: 50%;
   transform-origin: right;
+  transform: rotate(90deg);
 }
 
 .hand.second-hand {
-  background: #822;
-  height: 3px;
+  background: #d44;
+  height: 2px;
+}
+
+.hand.min-hand {
+  height: 4px;
 }
 
 .hand.hour-hand {
@@ -56,4 +62,34 @@ body {
   margin-left: 10%;
 }
 
-.
+
+.digital-clock {
+  border: 0;
+  margin: 1% auto 3%;
+}
+
+.digital-time {
+  font-size: 7rem;
+  line-height: 2;
+  color: #fff;
+}
+
+.attribution {
+  display: block;
+  color: #bbb;
+  text-align: center;
+  font-family: monospace;
+  margin: 6rem auto 0;
+  padding: 0.75rem 0;
+  font-size: 1.75rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.attribution a:hover {
+  cursor: pointer;
+  color: #fff;
+}

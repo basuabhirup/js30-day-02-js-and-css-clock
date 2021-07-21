@@ -22,5 +22,18 @@ function changeTime() {
   hoursHand.style.transform = "rotate(" + (hoursInDegrees + 90) + "deg)";
 
   console.log (hours, mins, seconds);
-  console.log (hoursInDegrees, minsInDegrees, secondsInDegrees);
+
+  secondsInTwoDigits = twoDigits(seconds); // calls a custom function twoDigits
+  minsInTwoDigits = twoDigits(mins);
+  hoursInTwoDigits = twoDigits(hours);
+
+  function twoDigits(x) {
+    if (x < 10) {
+      return "0" + x;
+    } else {
+      return x;
+    }
+  }
+  var digitalTime = document.querySelector(".digital-time");
+  digitalTime.textContent = hoursInTwoDigits + "h " + minsInTwoDigits + "m " + secondsInTwoDigits + "s";
 }
