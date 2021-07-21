@@ -27,13 +27,14 @@ function changeTime() {
   minsInTwoDigits = twoDigits(mins);
   hoursInTwoDigits = twoDigits(hours);
 
-  function twoDigits(x) {
+  function twoDigits(x) { // defining the custom twoDigits function
     if (x < 10) {
       return "0" + x;
     } else {
       return x;
     }
   }
-  var digitalTime = document.querySelector(".digital-time");
-  digitalTime.textContent = hoursInTwoDigits + "h " + minsInTwoDigits + "m " + secondsInTwoDigits + "s";
+  var digitalTime = hoursInTwoDigits + "h " + minsInTwoDigits + "m " + secondsInTwoDigits + "s"
+  var digitalTimeObject = document.querySelector(".digital-time");
+  digitalTimeObject.textContent = digitalTime;
 }
