@@ -1,4 +1,4 @@
 # Day 2 Challenge: JavaScript & CSS Clock
 This is the project for the Day 2 of the 30-days vanilla JavaScript coding challenge from https://javascript30.com/
 
-![Completed project screenshot](https://i.ibb.co/0qJSKYX/image.png)
+![Completed project screenshot](https://i.ibb.co/1TdCssj/image.png)
